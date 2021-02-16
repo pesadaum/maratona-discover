@@ -307,3 +307,57 @@ button:hover{
         gap: 2rem;
     }
 }
+
+/*====ANIMATIONS====*/
+
+#incomeImg {
+    animation: rotate-scale-up 0.6s ease-in-out 1s both;
+}
+
+#expenseImg {
+    animation: rotate-scale-up 0.6s ease-in-out 1.4s both;
+}
+
+#totalImg{
+    animation: rotate-scale-up 0.6s ease-in-out 1.6s both;
+}
+
+#removeImg{
+    animation: wobble-hor-bottom 0.8s both;
+}
+
+
+@keyframes rotate-scale-up {
+    0% {
+      transform: scale(1) rotateZ(0);
+    }
+    50% {
+      transform: scale(1.5) rotateZ(180deg);
+    }
+    100% {
+      transform: scale(1) rotateZ(360deg);
+    }
+}
+@keyframes wobble-hor-bottom {
+    0%,
+    100% {
+      transform: translateX(0%);
+      transform-origin: 50% 50%;
+    }
+    15% {
+      transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+      transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+      transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+      transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+      transform: translateX(-6px) rotate(-1.2deg);
+    }
+  }
+

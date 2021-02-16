@@ -122,16 +122,6 @@ table tbody tr:hover{
     opacity: .5;
 }
 
-/*
-
-table tbody tr img{
-    transition: opacity 0.5s;
-}
-table tbody tr img:hover{
-    opacity: 1.0;
-}
-*/
-
 table thead tr th:first-child,
 table tbody tr td:first-child
 {
